@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arita's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display:ital@1&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a8709841e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars" id="btn"></i>
+        </label>
+    </nav>
+
+    <div class="home" id="home">
+        <hr class="divider" />
+        <div class="left-side">
+            <h2>Hi, I'm</h2>
+            <h1>Arita Azizi</h1>
+            <h3>Front End Developer</h3>
+        </div>
+        <div class="right-side">
+            <img class="image" src="images/me.jpg" height="300px" width="300px">
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="aboutme">
+                <div class="title">
+                    <h1>About me</h1>
+                </div>
+                <div class="content">
+                    <p>I'm a computer engineering student. Highly skilled in Front End, currently seeking to develop my
+                        skills in Back End. <br> I have experience working as part of a team
+                        and individually. <br>I am always energetic and eager to learn new skills.
+                    </p>
+                </div>
+                <div class="button"><a href="CV/AritaAzizi_CV.pdf" target="_blank">Resume</a></div>
+            </div>
+            <div class="contact">
+                <div class="container-1">
+                    <div class="e-mail">
+                        <h3 class="content1"><i class="far fa-envelope"></i></i>E-mail:</h1>
+                            <span><a href="mailto:arita.azizi98@gmail.com">arita.azizi98@gmail.com</a></span>
+                            <p></p>
+                    </div>
+                    <div class="phone">
+                        <h3 class="content1"><i class="fas fa-phone-alt"></i></i>Phone:</h3>
+                        <span>043-568-695</span>
+                    </div>
+                    <div class="address">
+                        <h3 class="content1"><i class="fas fa-map-marked-alt"></i>Address:</h3>
+                        <span>Pristina, Kosovo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="inner">
+            <div class="title-skills">
+                <h1>Skills</h1>
+            </div>
+            <hr class="divider1" />
+            <div class="myskills">
+                <div class="skill">
+                    <img src="images/html.png" width="150px" height="150px">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/css.png" width="135px" height="135px">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/js.png" width="135px" height="135px">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/php.jpg" width="170px" height="150px">
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/mysql.png" width="150px" height="150px">
+                    <h3>MySql</h3>
+                </div>
+                <div class="skill">
+                    <img src="images/c++.png" width="180px" height="140px">
+                    <h3>C++</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="project-title">
+            <h1>Projects</h1>
+        </div>
+        <hr class="divider2" />
+        <div class="myprojects">
+            <div class="firstp">
+                <h2>News24</h2>
+                <p>This project is about a web news portal. In this project I had the
+                    opportunity to collaborate with a group. The technologies used
+                    are: HTML,CSS and JavaScript.</p>
+                <a href="https://testgr3.netlify.app/lajmet/teknologji.html" target="_blank"><img
+                        src="images/project1.PNG"></a>
+            </div>
+
+            <div class="secondp">
+                <h2 class="project-name">Alohilani Resort</h2>
+                <p>I developed this project as part of a training course. The technologies used are: HTML5 and CSS3.
+                    I managed to realize this website in record time for 10 days</p>
+                <a href="http://alohilaniresort.rf.gd/" target="_blank"><img src="images/project2.PNG"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Copyright © 2022. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

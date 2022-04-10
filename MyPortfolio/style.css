@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+}
+
+.menu {
+    float: right;
+    margin-right: 80px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #635f5c;
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #635f5c;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+}
+
+.menu li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#icon {
+    color: #635f5c;
+    cursor: pointer;
+    font-size: 24px;
+    float: right;
+    padding-top: 20px;
+    margin-right: 40px;
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+}
+
+.divider {
+    width: 90%;
+    margin: auto;
+}
+
+.left-side {
+    float: left;
+    width: 45%;
+    margin-top: 250px;
+    margin-left: 200px;
+}
+
+.left-side h2 {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.left-side h3 {
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+.left-side h1 {
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-left: 15px;
+    background-color: #a98e7a;
+    color: white;
+}
+
+.right-side {
+    float: right;
+    width: 40%;
+    height: 100vh;
+}
+
+.image {
+    border-radius: 150px;
+    margin-top: 170px;
+    margin-left: -50px;
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0e7e1;
+}
+
+.container {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.aboutme {
+    float: left;
+    width: 55%;
+}
+
+.aboutme .title {
+    font-size: 20px;
+}
+
+.aboutme .content {
+    margin-top: 40px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.aboutme .button {
+    margin-top: 70px;
+}
+
+.aboutme .button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #a98e7a;
+    color: white;
+    font-size: 20px;
+}
+
+.aboutme .button a:hover {
+    background-color: white;
+    color: black;
+    transition: .4s ease;
+}
+
+.contact {
+    float: right;
+    width: 40%;
+}
+
+.container-1 {
+    padding-left: 100px;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+.phone {
+    padding: 30px 0;
+}
+
+.content1 i {
+    padding-right: 5px;
+}
+
+.e-mail a {
+    text-decoration: none;
+    color: black;
+}
+
+.skills {
+    width: 100%;
+    height: 100vh;
+}
+
+.inner {
+    padding-top: 50px;
+}
+
+.title-skills {
+    text-align: center;
+    font-size: 20px;
+}
+
+.divider1 {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+}
+
+.myskills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 80px;
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
+}
+
+.skill {
+    margin: auto;
+}
+
+.skill h3 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0e7e1;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.divider2 {
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+}
+
+.myprojects {
+    display: block;
+    padding-top: 70px;
+}
+
+.firstp {
+    float: left;
+    width: 50%;
+    margin: auto;
+    border-right: 2px solid #635f5c;
+}
+
+.secondp {
+    float: right;
+    width: 48%;
+}
+
+.firstp h2,
+.firstp p {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.secondp h2,
+.secondp p {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.firstp img,
+.secondp img {
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: auto;
+}
+
+.footer {
+    height: 60px;
+    background-color: #a98e7a;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 414px) {
+
+    .nav {
+        background-color: #a98e7a;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 50px;
+        padding-top: 50px;
+        text-align: center;
+        left: -100%;
+        transition: .3s ease;
+        background-color: #a98e7a;
+    }
+
+    .menu li {
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        color: white;
+    }
+
+    #icon {
+        display: block;
+        color: white;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .aboutme {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .aboutme .title {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .aboutme .content {
+        text-align: center;
+        margin: 20px;
+
+    }
+
+    .aboutme .button {
+        text-align: center;
+    }
+
+    .contact {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .container-1 {
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    .skills {
+        height: auto;
+    }
+
+    .title-skills {
+        font-size: 16px;
+    }
+
+    .myskills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 30px;
+    }
+
+    .skill img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill {
+        margin: auto;
+    }
+
+    .firstp {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .secondp {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+
+    .myprojects h2,
+    .myprojects p {
+        width: 70%;
+        margin: auto;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 1350px) {
+
+    .home {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-side {
+        float: none;
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .right-side {
+        display: block;
+        margin-right: 150px;
+
+    }
+
+}
